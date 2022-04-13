@@ -5,6 +5,7 @@ using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
 using NEYTI.Forms;
+using NEYTI.Forms.PopUpForm;
 using MySql.Data.MySqlClient;
 
 namespace NEYTI
@@ -15,8 +16,6 @@ namespace NEYTI
         MySqlConnection connection = new MySqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=NEYTI_DB;Integrated Security=True");
         MySqlCommand command;
         MySqlDataReader mdr;
-
-
 
         [DllImport("Gdi32.DLL", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
@@ -126,8 +125,9 @@ namespace NEYTI
         }
 
         private void btn_FAQ_Click(object sender, EventArgs e)
-        {   
-            Process.Start("http://www.google.ru/");
+        {
+            ActivateButton(sender, RGBColor.color1);
+            OpenChildForm(new FaqForm());
         }
 
         private void btn_Close_Click(object sender, EventArgs e)

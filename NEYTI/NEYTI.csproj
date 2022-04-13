@@ -284,11 +284,11 @@
     <Compile Include="Forms\PopUpForm\PopUpCustomScan.Designer.cs">
       <DependentUpon>PopUpCustomScan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\PopUpForm\PopUpDiskScan.cs">
+    <Compile Include="Forms\FaqForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\PopUpForm\PopUpDiskScan.Designer.cs">
-      <DependentUpon>PopUpDiskScan.cs</DependentUpon>
+    <Compile Include="Forms\FaqForm.Designer.cs">
+      <DependentUpon>FaqForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\PopUpForm\PopUpProtectionTips.cs">
       <SubType>Form</SubType>
@@ -362,6 +362,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PopUpForm\PopUpCustomScan.resx">
       <DependentUpon>PopUpCustomScan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FaqForm.resx">
+      <DependentUpon>FaqForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PopUpForm\PopUpProtectionTips.resx">
       <DependentUpon>PopUpProtectionTips.cs</DependentUpon>
@@ -446,6 +449,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="neyti_logotype.ico" />
+    <None Include="Resources\github.png" />
+    <None Include="Resources\facebook-circular-logo.png" />
+    <None Include="Resources\twitter2.png" />
+    <None Include="Resources\twitter1.png" />
+    <None Include="Resources\twitter.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controls\" />

@@ -62,7 +62,7 @@ namespace NEYTI.Forms.PopUpForm
             //string[] files1 = Directory.GetFiles(@"C:\Logs", "*", SearchOption.AllDirectories);
             //textFastLog.Text = "" + files1;
 
-            DirectoryInfo dr = new DirectoryInfo(@"%Temp%");
+            DirectoryInfo dr = new DirectoryInfo(@"C:\Windows");
             foreach (var d in dr.GetFiles())
             {
                 Thread.Sleep(50);
