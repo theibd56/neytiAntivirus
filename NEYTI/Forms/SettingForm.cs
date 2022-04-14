@@ -181,5 +181,10 @@ namespace NEYTI.Forms
                 MessageBox.Show("Now the application will not minimize to the tray.", "NEYTI SUPPORT", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void WebcamProtection_Link_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("ms-settings:privacy-webcam?activationSource=SMC-IA-4558611");
+        }
     }
 }

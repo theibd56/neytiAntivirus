@@ -29,6 +29,7 @@ namespace NEYTI.Forms.PopUpForm
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PopUpQuickScan));
             this.TitleBar = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.btnClose = new FontAwesome.Sharp.IconButton();
@@ -224,6 +225,7 @@ namespace NEYTI.Forms.PopUpForm
             this.Controls.Add(this.btnScan);
             this.Controls.Add(this.TitleBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PopUpQuickScan";
             this.Text = "PopUpQuickScan";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TitleBar_MouseDown);

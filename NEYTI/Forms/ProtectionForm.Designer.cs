@@ -277,6 +277,7 @@
             this.Controls.Add(this.btn_CustomScan);
             this.Controls.Add(this.btn_DiskScan);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ProtectionForm";
             this.Text = "Form1";
             this.panel2.ResumeLayout(false);

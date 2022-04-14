@@ -32,11 +32,11 @@ namespace NEYTI.Forms.PopUpForm
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PopUpProtectionTips));
             this.btnClose = new FontAwesome.Sharp.IconButton();
             this.TitleBar = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnMinimize = new FontAwesome.Sharp.IconButton();
             this.btn_Minimize = new FontAwesome.Sharp.IconButton();
             this.btn_Close = new FontAwesome.Sharp.IconButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.TitleBar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,6 +72,18 @@ namespace NEYTI.Forms.PopUpForm
             this.TitleBar.Size = new System.Drawing.Size(503, 40);
             this.TitleBar.TabIndex = 5;
             this.TitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TitleBar_MouseDown);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(12, 7);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(218, 25);
+            this.label2.TabIndex = 29;
+            this.label2.Text = "NEYTI Protection tips";
+            this.label2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TitleBar_MouseDown);
             // 
             // btnMinimize
             // 
@@ -137,18 +149,6 @@ namespace NEYTI.Forms.PopUpForm
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label1.UseMnemonic = false;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(12, 7);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(218, 25);
-            this.label2.TabIndex = 29;
-            this.label2.Text = "NEYTI Protection tips";
-            this.label2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TitleBar_MouseDown);
-            // 
             // PopUpProtectionTips
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -158,6 +158,7 @@ namespace NEYTI.Forms.PopUpForm
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TitleBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PopUpProtectionTips";
             this.Text = "PopUpProtectionTips";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TitleBar_MouseDown);

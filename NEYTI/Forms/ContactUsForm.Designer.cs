@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ContactUsForm));
             this.panel6 = new System.Windows.Forms.Panel();
             this.EmailForPartnerships = new System.Windows.Forms.LinkLabel();
             this.AddresForPartnerships = new System.Windows.Forms.LinkLabel();
@@ -274,6 +275,7 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ContactUsForm";
             this.Text = "Form1";
             this.panel6.ResumeLayout(false);

@@ -272,11 +272,23 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\BackupRecoverForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BackupRecoverForm.Designer.cs">
+      <DependentUpon>BackupRecoverForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ContactUsForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\ContactUsForm.Designer.cs">
       <DependentUpon>ContactUsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PopUpForm\testForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PopUpForm\testForm.Designer.cs">
+      <DependentUpon>testForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\PopUpForm\PopUpCustomScan.cs">
       <SubType>Form</SubType>
@@ -357,8 +369,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BackupRecoverForm.resx">
+      <DependentUpon>BackupRecoverForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ContactUsForm.resx">
       <DependentUpon>ContactUsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PopUpForm\testForm.resx">
+      <DependentUpon>testForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PopUpForm\PopUpCustomScan.resx">
       <DependentUpon>PopUpCustomScan.cs</DependentUpon>

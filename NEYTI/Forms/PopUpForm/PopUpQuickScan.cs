@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Threading;
+using System.Management;
 
 namespace NEYTI.Forms.PopUpForm
 {
@@ -53,7 +54,9 @@ namespace NEYTI.Forms.PopUpForm
             Close();
         }
 
-        //todo - ebanut' do kontca
+
+
+
         private void btnScan_Click(object sender, EventArgs e)
         {
             lblScannedQuickSum.Text = null;
@@ -62,19 +65,42 @@ namespace NEYTI.Forms.PopUpForm
             //string[] files1 = Directory.GetFiles(@"C:\Logs", "*", SearchOption.AllDirectories);
             //textFastLog.Text = "" + files1;
 
-            DirectoryInfo dr = new DirectoryInfo(@"C:\Windows");
+            //ManagementObjectSearcher searcher = new ManagementObjectSearcher("SELECT UserName FROM Win32_ComputerSystem");
+            //ManagementObjectCollection collection = searcher.Get();
+            //string username = (string)collection.Cast<ManagementBaseObject>().First()["UserName"];
+
+            string username = SystemInformation.UserName.ToString();
+
+            //DirectoryInfo dr = new DirectoryInfo(@"C:\Users\"+username);
+            DirectoryInfo dr = new DirectoryInfo(@"C:\Users\" + username + @"\Downloads");
             foreach (var d in dr.GetFiles())
             {
-                Thread.Sleep(50);
+                Thread.Sleep(20);
                 listFastLog.Items.Add(d.Name);
                 lblScannedQuickSum.Text = listFastLog.Items.Count.ToString();
-
             }
-
-        }
-
-        private void textFastLog_TextChanged(object sender, EventArgs e)
-        {
+            DirectoryInfo dr1 = new DirectoryInfo(@"C:\Windows\Temp");
+            foreach (var d in dr1.GetFiles())
+            {
+                Thread.Sleep(20);
+                listFastLog.Items.Add(d.Name);
+                lblScannedQuickSum.Text = listFastLog.Items.Count.ToString();
+            }
+            DirectoryInfo dr2 = new DirectoryInfo(@"C:\Users\"+ username + @"\AppData\Roaming");
+            foreach (var d in dr2.GetDirectories())
+            {
+                Thread.Sleep(20);
+                listFastLog.Items.Add(d.Name);
+                lblScannedQuickSum.Text = listFastLog.Items.Count.ToString();
+            }
+            DirectoryInfo dr3 = new DirectoryInfo(@"C:\Users\" + username + @"\AppData\Local\Temp");
+            foreach (var d in dr3.GetFiles())
+            {
+                Thread.Sleep(20);
+                listFastLog.Items.Add(d.Name);
+                lblScannedQuickSum.Text = listFastLog.Items.Count.ToString();
+                btnScan.Enabled = false;
+            }
 
         }
     }

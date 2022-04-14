@@ -28,25 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingForm));
             this.label1 = new System.Windows.Forms.Label();
             this.AutoRunCheck = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.NotificationSound = new System.Windows.Forms.CheckBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.TaskbarTrayMode = new System.Windows.Forms.CheckBox();
             this.MaliciousUtilitesCheckbox = new System.Windows.Forms.CheckBox();
             this.acrUSBM = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.WebcamProtection_Link = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -89,23 +91,12 @@
             this.NotificationSound.AutoSize = true;
             this.NotificationSound.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.NotificationSound.ForeColor = System.Drawing.Color.White;
-            this.NotificationSound.Location = new System.Drawing.Point(18, 47);
+            this.NotificationSound.Location = new System.Drawing.Point(25, 167);
             this.NotificationSound.Name = "NotificationSound";
             this.NotificationSound.Size = new System.Drawing.Size(204, 44);
             this.NotificationSound.TabIndex = 25;
             this.NotificationSound.Text = "Accompany notifications \r\nwiths sound signal\r\n";
             this.NotificationSound.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(13, 12);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(166, 25);
-            this.label3.TabIndex = 24;
-            this.label3.Text = "NOTIFICATION";
             // 
             // TaskbarTrayMode
             // 
@@ -185,6 +176,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(46)))), ((int)(((byte)(111)))));
             this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.NotificationSound);
             this.panel1.Controls.Add(this.AutoRunCheck);
             this.panel1.Controls.Add(this.MaliciousUtilitesCheckbox);
             this.panel1.Controls.Add(this.TaskbarTrayMode);
@@ -194,25 +186,14 @@
             this.panel1.TabIndex = 31;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(46)))), ((int)(((byte)(111)))));
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.NotificationSound);
-            this.panel2.Location = new System.Drawing.Point(417, 29);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(246, 106);
-            this.panel2.TabIndex = 32;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(46)))), ((int)(((byte)(111)))));
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.comboBox1);
-            this.panel3.Location = new System.Drawing.Point(417, 151);
+            this.panel3.Location = new System.Drawing.Point(418, 151);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(246, 100);
+            this.panel3.Size = new System.Drawing.Size(163, 100);
             this.panel3.TabIndex = 33;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -223,7 +204,7 @@
             this.panel4.Controls.Add(this.acrUSBM);
             this.panel4.Location = new System.Drawing.Point(24, 275);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(402, 100);
+            this.panel4.Size = new System.Drawing.Size(400, 100);
             this.panel4.TabIndex = 34;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
@@ -238,30 +219,67 @@
             this.label5.TabIndex = 28;
             this.label5.Text = "ACTIVATE ADDITIONAL FEATURES";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.Color.Transparent;
+            this.label7.Location = new System.Drawing.Point(12, 11);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(257, 25);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "WEBCAM PROTECTION";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(46)))), ((int)(((byte)(111)))));
+            this.panel2.Controls.Add(this.WebcamProtection_Link);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Location = new System.Drawing.Point(418, 29);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(282, 98);
+            this.panel2.TabIndex = 35;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // WebcamProtection_Link
+            // 
+            this.WebcamProtection_Link.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(187)))), ((int)(((byte)(204)))));
+            this.WebcamProtection_Link.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.WebcamProtection_Link.LinkColor = System.Drawing.Color.Transparent;
+            this.WebcamProtection_Link.Location = new System.Drawing.Point(13, 46);
+            this.WebcamProtection_Link.Name = "WebcamProtection_Link";
+            this.WebcamProtection_Link.Size = new System.Drawing.Size(259, 40);
+            this.WebcamProtection_Link.TabIndex = 7;
+            this.WebcamProtection_Link.TabStop = true;
+            this.WebcamProtection_Link.Text = "Add, edit or remove applications \r\nin the webcam access list";
+            this.WebcamProtection_Link.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(187)))), ((int)(((byte)(204)))));
+            this.WebcamProtection_Link.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.WebcamProtection_Link_LinkClicked);
+            // 
             // SettingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(15)))), ((int)(((byte)(75)))));
             this.ClientSize = new System.Drawing.Size(779, 475);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SettingForm";
             this.ShowIcon = false;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.SettingForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -270,7 +288,6 @@
         #endregion
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         public System.Windows.Forms.CheckBox AutoRunCheck;
         public System.Windows.Forms.CheckBox NotificationSound;
         public System.Windows.Forms.CheckBox TaskbarTrayMode;
@@ -279,9 +296,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.LinkLabel WebcamProtection_Link;
     }
 }

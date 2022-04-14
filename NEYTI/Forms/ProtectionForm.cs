@@ -12,10 +12,7 @@ namespace NEYTI.Forms
     {
         PopUpCustomScan PUCS; PopUpQuickScan PUQS; 
         PopUpProtectionTips PUPT; UsbManagerForm USBM;
-        SettingForm SF = new SettingForm();/*PopUpDiskScan PUDS;*/ //set the form to variable
-
-
-        public bool IsScanning;
+        SettingForm SF = new SettingForm();
 
         [DllImport("Gdi32.DLL", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn

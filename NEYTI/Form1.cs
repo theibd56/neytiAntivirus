@@ -109,7 +109,7 @@ namespace NEYTI
         private void btn_Privacy_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColor.color1);
-            OpenChildForm(new PrivacyForm());
+            OpenChildForm(new BackupRecoverForm());
         }
 
         private void btn_Setting_Click(object sender, EventArgs e)

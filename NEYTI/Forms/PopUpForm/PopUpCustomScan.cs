@@ -75,7 +75,10 @@ namespace NEYTI.Forms.PopUpForm
             adapter.SelectCommand = command;
             adapter.Fill(table);
 
-            if(table.Rows.Count == 1)
+            btnScan.Enabled = false;
+
+
+            if (table.Rows.Count == 1)
             {
                 File.Delete(tbFilePath.Text);
                 lblStatusResult.Text = "Infected! File deleted";

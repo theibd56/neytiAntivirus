@@ -49,11 +49,6 @@ namespace NEYTI.Forms
             panel1.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panel1.Width, panel1.Height, 25, 25));
         }
 
-        private void panel6_Paint(object sender, PaintEventArgs e)
-        {
-            panel6.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panel6.Width, panel6.Height, 25, 25));
-        }
-
 
         private void btnBrowse_Click(object sender, EventArgs e)
         {
