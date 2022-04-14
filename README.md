@@ -27,7 +27,6 @@ Pull requests without adequate testing may be delayed. Please add tests alongsid
 ![image](https://user-images.githubusercontent.com/84173880/163362644-234eaf80-95b8-4b88-84c4-6b20532fb65c.png)
 ![image](https://user-images.githubusercontent.com/84173880/163362681-90045fd7-55be-4097-8736-53cf4a1dc684.png)
 ![image](https://user-images.githubusercontent.com/84173880/163362757-c0be0e83-96e9-4828-abdf-d84b71294132.png)
-![image](https://user-images.githubusercontent.com/84173880/163362799-38df23ff-51f8-49e4-9873-ae200251106a.png)
 ![image](https://user-images.githubusercontent.com/84173880/163362992-a9fdfd0c-7f4a-4b18-8d89-a42e1b93e5e0.png)
 
 ## Contact
