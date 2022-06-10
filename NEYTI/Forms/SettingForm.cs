@@ -12,7 +12,6 @@ using System.Windows.Forms;
 using FontAwesome.Sharp;
 using Microsoft.Win32;
 using NEYTI.Forms;
-using NEYTI.Forms.SubForm;
 
 namespace NEYTI.Forms
 {
@@ -83,27 +82,8 @@ namespace NEYTI.Forms
             }
         }
 
-        private void btnSettingGeneral_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColor.color1);
-            OpenChildForm(new GeneralForm());
-        }
-
-        private void btnSettingInterface_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColor.color1);
-            OpenChildForm(new InterfaceForm());
-        }
-
-        private void btnSettingManage_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColor.color1);
-            OpenChildForm(new ManageForm());
-        }
-
         private void SettingForm_Load(object sender, EventArgs e)
         {
-            OpenChildForm(new GeneralForm());
         }
 
         private void AutoRunCheck_CheckedChanged(object sender, EventArgs e)

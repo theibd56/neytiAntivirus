@@ -29,6 +29,7 @@ namespace NEYTI.Forms.PopUpForm
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PopUpCustomScan));
             this.TitleBar = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -44,6 +45,7 @@ namespace NEYTI.Forms.PopUpForm
             this.lblStatus = new System.Windows.Forms.Label();
             this.btnScan = new FontAwesome.Sharp.IconButton();
             this.btnSearch = new FontAwesome.Sharp.IconButton();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.TitleBar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -258,6 +260,12 @@ namespace NEYTI.Forms.PopUpForm
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.Text = "notifyIcon1";
+            this.notifyIcon1.Visible = true;
+            this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
+            // 
             // PopUpCustomScan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -301,5 +309,6 @@ namespace NEYTI.Forms.PopUpForm
         private System.Windows.Forms.Label lblStatus;
         public System.Windows.Forms.Label lblStatusResult;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
     }
 }

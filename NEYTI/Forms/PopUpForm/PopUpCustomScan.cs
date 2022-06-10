@@ -14,7 +14,6 @@ namespace NEYTI.Forms.PopUpForm
     {
 
         DataBase dataBase = new DataBase();
-
         [DllImport("Gdi32.DLL", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn(int nLeftRect, int nTopRect, int nRightRect, int nBottomRect, int nWidthEllipse, int nHeightEllipse);
 
@@ -63,6 +62,7 @@ namespace NEYTI.Forms.PopUpForm
 
         private void btnScan_Click(object sender, EventArgs e)
         {
+
             var hashItem = tbMD5.Text;
 
             SqlDataAdapter adapter = new SqlDataAdapter();
@@ -81,8 +81,7 @@ namespace NEYTI.Forms.PopUpForm
             if (table.Rows.Count == 1)
             {
                 File.Delete(tbFilePath.Text);
-                lblStatusResult.Text = "Infected! File deleted";
-            }
+                lblStatusResult.Text = "Infected! File deleted";            }
             else
             {
                 lblStatusResult.Text = "Clean!";
@@ -112,6 +111,12 @@ namespace NEYTI.Forms.PopUpForm
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            Show();
+            WindowState = FormWindowState.Normal;
         }
     }
 }

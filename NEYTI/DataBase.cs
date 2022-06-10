@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.SqlClient;
+﻿using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace NEYTI
 {
     class DataBase
     {
-
         SqlConnection sqlConnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=NEYTI_DB;Integrated Security=True");
-
+        //SqlConnection sqlConnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\NEYTI\NEYTI\NEYTI_DB.mdf;Integrated Security=True");
         public void openConnection()
         {
             if(sqlConnection.State == System.Data.ConnectionState.Closed)

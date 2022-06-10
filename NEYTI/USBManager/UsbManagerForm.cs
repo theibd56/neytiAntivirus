@@ -12,7 +12,14 @@ namespace NEYTI.USBManager
         private UsbManager manager;
 
         [DllImport("Gdi32.DLL", EntryPoint = "CreateRoundRectRgn")]
-        private static extern IntPtr CreateRoundRectRgn(int nLeftRect, int nTopRect, int nRightRect, int nBottomRect, int nWidthEllipse, int nHeightEllipse);
+        private static extern IntPtr CreateRoundRectRgn(
+            int nLeftRect, 
+            int nTopRect,
+            int nRightRect, 
+            int nBottomRect, 
+            int nWidthEllipse, 
+            int nHeightEllipse
+        );
 
 
         public UsbManagerForm()

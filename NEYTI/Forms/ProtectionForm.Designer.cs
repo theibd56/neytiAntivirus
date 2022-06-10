@@ -128,7 +128,7 @@
             this.btn_ProtectionTips.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
             this.btn_ProtectionTips.Size = new System.Drawing.Size(244, 176);
             this.btn_ProtectionTips.TabIndex = 12;
-            this.btn_ProtectionTips.Text = "TIPS ON HOW TO SECURE YOUR PS";
+            this.btn_ProtectionTips.Text = "TIPS ON HOW TO SECURE YOUR PC";
             this.btn_ProtectionTips.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_ProtectionTips.UseVisualStyleBackColor = false;
             this.btn_ProtectionTips.Click += new System.EventHandler(this.btn_ProtectionTips_Click);
@@ -168,7 +168,7 @@
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 109;
-            this.iconPictureBox1.Location = new System.Drawing.Point(573, 255);
+            this.iconPictureBox1.Location = new System.Drawing.Point(578, 255);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(130, 109);
             this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

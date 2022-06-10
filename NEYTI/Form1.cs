@@ -13,10 +13,6 @@ namespace NEYTI
     public partial class Form1 : Form
     {
 
-        MySqlConnection connection = new MySqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=NEYTI_DB;Integrated Security=True");
-        MySqlCommand command;
-        MySqlDataReader mdr;
-
         [DllImport("Gdi32.DLL", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
         (
@@ -126,8 +122,7 @@ namespace NEYTI
 
         private void btn_FAQ_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColor.color1);
-            OpenChildForm(new FaqForm());
+            Process.Start("https://theibd56.github.io/diploma_site/");
         }
 
         private void btn_Close_Click(object sender, EventArgs e)
