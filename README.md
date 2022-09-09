@@ -36,6 +36,6 @@ Pull requests without adequate testing may be delayed. Please add tests alongsid
 - GitHub [@theibd56](https://github.com/theibd56)
 - Twitter [@ytheibd56](https://twitter.com/theibd56)
 
-##PS
+## PS
 
 This project was completed by a student of an engineering college, do not swear too much
