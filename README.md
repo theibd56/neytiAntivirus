@@ -34,7 +34,8 @@ Pull requests without adequate testing may be delayed. Please add tests alongsid
 
 - Instagram [@theibd56](https://www.instagram.com/theibd56)
 - GitHub [@theibd56](https://github.com/theibd56)
-- Twitter [@ytheibd56](https://twitter.com/theibd56)
+- Twitter [@heibd56](https://twitter.com/theibd56)
+- Telegram [@theibd56](https://t.me/theibd56)
 
 ## PS
 
