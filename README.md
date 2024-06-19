@@ -6,11 +6,11 @@ The purpose of this project is to create a graduate thesis project that is posit
 
 It has no databases included, and at this point, in can be used only as a basis for more complicated projects. Content for the database can be taken from https://virusshare.com/hashes
 
-##Compatibility
+## Compatibility
 
 It was not tested on systems other than Windows (8, 8.1, 10) and it probably will never be.
 
-##Futurelog
+## Futurelog
 
 All developers should feel welcome and encouraged to contribute to NEYTI Antivirus.
 
